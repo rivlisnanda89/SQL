@@ -29,3 +29,5 @@ DROP TABLE TABELATESTE;
 
 -- 
 ALTER TABLE MUSICAS ADD numero_edicao numeric not null; 
+
+Cuidado com o uso do comando DELETE ou UPDATE sem WHERE. Confira-os, com calma, antes de apertar o <Enter>!
