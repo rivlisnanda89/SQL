@@ -1,0 +1,27 @@
+-- Criacao do banco de dados
+CREATE DATABASE BIBLIOTECH;
+USE BIBLIOTECH;
+
+-- Criando as tabelas dos banco de dados
+CREATE TABLE USUARIO (
+CPF varchar(11) primary key, 
+nome varchar(30), 
+endereco varchar(30), 
+DataNascimento date, 
+ telefone varchar(15));
+
+CREATE TABLE LIVRO (
+CDD varchar(15) primary key, TITULO varchar(15), AUTOR varchar(15), ANOPUBLICACAO DATE, EDITORA varchar(15));
+
+
+create table emprestimo (
+ID varchar(10) primary key, 
+ID_livro varchar (15), 
+ID_usuario varchar (20), 
+Dataemprestio date, 
+datadevolucao date,
+ 
+ constraint FK_emprestimo_usuario foreign key (ID_usuario) references usuario (cpf),
+ constraint FK_livro_emprestimo foreign key (ID_livro) references LIVRO (CDD));
+ 
+
