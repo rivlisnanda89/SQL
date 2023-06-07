@@ -1,5 +1,4 @@
-Após a criação da estrutura do banco de dados, com o comando CREATE TABLE, as tabelas estão prontas para receber os dados que serão manipulados no dia a dia das operações que irão utilizá-los. Portanto, é necessário inseri-los. E isso é feito através do comando INSERT, que tem a seguinte sintaxe:
-
+-- insering data of the table
 
 INSERT INTO nome_da_tabela (nome_da_coluna1, nome_da_coluna2, ...) VALUES (valor_a_ser_inserido_na_coluna1, valor_a_ser_inserido_na_coluna2, ...)
 
